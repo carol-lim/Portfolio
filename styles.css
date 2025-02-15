@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: "Monsterat", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  margin: 0;
+  color: rgb(0, 17, 34);
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+  background: #fff;
+  color: rgb(0, 17, 34);
+  padding: 10px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav list */
+  align-items: center; /* Vertically center items */
+}
+
+nav h1 {
+  color: rgb(0, 17, 34);
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: rgb(0, 17, 34);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  color: rgb(0, 17, 34);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  color: rgb(0, 17, 34);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: rgb(136, 136, 136);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: rgb(52, 104, 192);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills ul li {
+  background: #ecf0f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: rgb(52, 104, 192);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: rgb(45, 45, 45);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500; /* Medium */
+}
